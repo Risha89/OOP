@@ -125,6 +125,7 @@ def srl(grades):
         c += len(grades[el])
     return a/c
 
+
 def srs(grades):
     a = 0
     b = 0
@@ -159,7 +160,8 @@ def average_of_students(science, students_list):
             a = sum(el.grades[science])
             b = len(el.grades[science])
             sr_oc += (a/b)
-    print(sr_oc/st)
+    print(f'Средняя оценка студентов по предмету {science} = {sr_oc/st}')
+
 average_of_students('Math', sl)
 
 def average_of_lecturs(science, lecturs_list):
@@ -171,6 +173,6 @@ def average_of_lecturs(science, lecturs_list):
             a = sum(el.grades[science])
             b = len(el.grades[science])
             sr_oc += (a/b)
-    print(sr_oc/st)
+    print(f'Средняя оценка лекторов за лекции по предмету {science} = {sr_oc/st}')
 
 average_of_lecturs('Chemistry', ll)
